@@ -10,7 +10,7 @@ void print_buffer(char buffer[], int *buff_ind);
  */
 int _printf(const char *format, ...)
 {
-	int j=0, printed = 0, printed_chars = 0;
+	int j= 0, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list form;
 	char buffer[BUFF_SIZE];
@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 
 	va_start(form, format);
 
-	while(format && format[j] != '\0')
+	while (format && format[j] != '\0')
 	{
 		if (format[j] != '%')
 		{
